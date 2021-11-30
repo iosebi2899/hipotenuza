@@ -1,38 +1,68 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 500px;
+  background: rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 25px;
+  padding: 25px;
+}
+.container h1{
+  font-size: 18px;
+  color: white;
+
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.outlined-basic{
+  border-radius: 15px;
+  color: white;
+}
+.MuiOutlinedInput-notchedOutline{
+  color:white !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  border-radius: 14px !important;
+}
+
+.button{
+  padding: 20px;
+  border-radius: 16px;
+  outline: none;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  cursor: pointer;
+  border:1px solid rgba(255, 255, 255, 0.4);
+}
+.MuiInputLabel-root, .MuiOutlinedInput-input {
+  color: white !important;
+}
+
+.hipotenuza{
+  color:white;
+  transition: 0.3s;
+  overflow: hidden;
+  height: 40px;
+}
+
+.p{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hidden{
+  height: 0;
 }
