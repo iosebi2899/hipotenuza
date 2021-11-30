@@ -32,7 +32,7 @@ const App = ()=>{
           <TextField onChange={(e) => setKateti({...katetebi, kateti2: parseInt(e.target.value) })} className={classes.TextField}  id="outlined-basic" label="პირველი კათეტი" variant="outlined"/>
           <TextField onChange={(e) => setKateti({...katetebi, kateti1: parseInt(e.target.value) })} className={classes.TextField} id="outlined-basic" label="მეორე კათეტი" variant="outlined"/>
         </div>
-        <button onClick={handleClick} className="button">Calculate</button>
+        <button onClick={handleClick} className="button">გამოიანგარიშე</button>
         <div className={katetebi.hipotenuza > 0 ? "hipotenuza" : "hipotenuza hidden"}>
           <p className="p">ჰიპოტენუზა: {katetebi.hipotenuza}</p>
         </div>
